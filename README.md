@@ -1,6 +1,6 @@
 # Ena Min
 
-Ena min is a minimal designed personal blog
+Ena Min is a minimal designed personal blog
 
 ## Installation
 
