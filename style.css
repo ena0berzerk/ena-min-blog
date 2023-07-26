@@ -41,7 +41,7 @@ nav {
   margin-bottom: 100px;
 }
 
-a svg {
+nav a svg {
   height: 30px;
   width: 30px;
   margin: 0px;
@@ -123,4 +123,69 @@ header p {
   max-width: 454px;
   opacity: 0.9;
   line-height: 1.7;
+}
+
+/* MAIN SECTION */
+
+main {
+  width: 640px;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 130px;
+}
+
+main h2 {
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+main article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ececec;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+article {
+  opacity: 0.9;
+}
+
+article:hover {
+  opacity: 1;
+}
+
+main a {
+  color: #434648;
+  opacity: 0.9;
+}
+
+.all-posts {
+  margin-top: 12px;
+}
+
+.all-posts a:hover {
+  transition: 200ms color;
+}
+
+.all-posts a:hover {
+  color: #fd841f;
+  opacity: 1;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-links svg {
+  width: 25px;
+  height: 25px;
 }
