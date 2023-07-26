@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+/* MAIN SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito+Sans:wght@400;500;700;900&display=swap');
 
 * {
   padding: 0;
@@ -7,5 +9,118 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Nunito Sans', sans-serif;
+  color: #0d122b;
+}
+
+::selection {
+  background: #fdffae;
+}
+
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.select-disable {
+  user-select: none;
+}
+
+.container {
+  width: 850px;
+  margin: 0 auto;
+  /* background-color: tomato; */
+}
+
+/* NAV SECTION*/
+
+nav {
+  padding: 12px 0 18px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 100px;
+}
+
+a svg {
+  height: 30px;
+  width: 30px;
+  margin: 0px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px 8px;
+}
+
+li:nth-child(2) {
+  margin-right: 20px;
+}
+
+.ul-separatus {
+  cursor: default;
+  opacity: 0.8;
+}
+
+li.logo {
+  margin-right: auto;
+}
+
+li.logo a svg {
+  transition: 200ms color;
+}
+
+li.logo a svg:hover {
+  color: #fd841f;
+  opacity: 0.8;
+}
+
+li a {
+  display: flex;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #0d122b;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+li a:hover {
+  opacity: 1;
+}
+
+.ul-links {
+  display: flex;
+}
+
+.ul-separatus {
+  margin: 0 8px;
+}
+
+/* HEADER SECTION */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 130px;
+  text-align: center;
+}
+
+.my-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+header p {
+  font-size: 17px;
+  max-width: 454px;
+  opacity: 0.9;
+  line-height: 1.7;
 }
