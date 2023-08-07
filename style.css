@@ -8,44 +8,27 @@
   box-sizing: border-box;
 }
 
-/* light and dark mode */
-
-.light-btn {
-  transition: scale(1, 1);
+/* root light dark mode */
+:root {
+  --nav-a-color: #0d122b;
+  --border-color: #ececec;
+  --article-color: #434648;
+  --small-color: #6b7886;
 }
 
-.light-mode {
-  color: #babdc4;
-  background-color: #131418;
-}
-
-.light-header-h1 {
-  color: #ececec;
-}
-
-.light-nav-border {
-  border-color: #1b1d25;
-}
-
-.light-nav-links {
-  color: #ececec;
-}
-
-.light-articles {
-  border-color: #1b1d25;
-}
-
-.light-articles-a {
-  color: #babdc4;
-}
-
-.light-articles-h2 {
-  color: #ececec;
+:root.dark {
+  --nav-a-color: #ececec;
+  --border-color: #1b1d25;
+  --header-color: #ececec;
+  --article-color: #babdc4;
+  --small-color: #6b7886;
+  --bg-color: #131418;
 }
 
 body {
   font-family: 'Nunito Sans', sans-serif;
   color: #0d122b;
+  background-color: var(--bg-color);
 }
 
 ::selection {
@@ -55,6 +38,7 @@ body {
 h1 {
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 10px;
+  color: var(--header-color);
 }
 
 .select-disable {
@@ -70,7 +54,7 @@ h1 {
 
 nav {
   padding: 12px 0;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
   margin-bottom: 100px;
 }
 
@@ -114,7 +98,7 @@ li a {
   display: flex;
   text-transform: capitalize;
   text-decoration: none;
-  color: #0d122b;
+  color: var(--nav-a-color);
   line-height: 1.8;
   letter-spacing: 1px;
   opacity: 0.8;
@@ -156,6 +140,7 @@ header p {
   max-width: 454px;
   opacity: 0.9;
   line-height: 1.7;
+  color: var(--header-color);
 }
 
 /* MAIN SECTION */
@@ -170,16 +155,18 @@ main {
 main h2 {
   margin-bottom: 18px;
   font-size: 20px;
+  color: var(--header-color);
 }
 
 main article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid var(--border-color);
   padding: 10px 0;
   font-weight: 400;
   font-size: 14px;
+  color: var(--article-color);
 }
 
 article {
@@ -191,7 +178,7 @@ article:hover {
 }
 
 main a {
-  color: #434648;
+  color: var(--article-color);
   opacity: 0.9;
   text-decoration: none;
 }
