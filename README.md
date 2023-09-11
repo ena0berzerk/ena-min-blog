@@ -6,6 +6,8 @@ Ena Min is a minimal designed personal blog
 
 [Ena Min](https://ena0berzerk.github.io/personal-blog)
 
+![sign up](img/preview-min.png)
+
 ## Installation
 
 Use the SSH:
